@@ -1,0 +1,235 @@
+body {
+    background-color: #b35900;
+    color: #4d2600;
+    text-align: center;
+}
+
+main {
+    background-color: #ff9933;
+    border: solid 5px #4d2600;
+    border-radius: 15px;
+    margin: 15px;
+    max-width: 1024px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff9933;
+}
+
+h2 {
+    text-align: left;
+    font-size: 30px;
+    margin: 20px;
+    color: #b35900
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    margin: 15px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+figcaption {
+    color: #4d2600;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.benno {
+    width: 70vw;
+    margin: 0;
+    max-width: 900px;
+}
+
+.pup,
+.moe,
+.echo {
+    width: 50vw;
+    max-width: 400px;
+}
+
+.bobram {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bo {
+    width: 34vw;
+}
+
+.bram {
+    width: 30vw;
+}
+
+.nu {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ren,
+.tulp,
+.dijk {
+    width: 22vw;
+    max-width: 275px;
+}
+
+footer {
+    border: solid 2px #4d2600;
+    border-radius: 10px;
+    background-color: #ff9933;
+    margin: 15px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1030px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #b35900;
+}
+
+a:hover {
+    color: #4d2600;
+}
+
+@media (min-width: 1080px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        width: 1030px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(6, 170px);
+        grid-template-rows: repeat(17, auto);
+        grid-template-areas: 
+        "A A A A A A"
+        "B B B B B B"
+        "C C C C C C"
+        "D D D D E E"
+        "F F F F F F"
+        "G H H H H H"
+        "I I I I I I"
+        "J J J J J J"
+        "K K K K K K"
+        "L L L L L L"
+        "U U U U U U"
+        "N N N N M M"
+        "O O O O O O"
+        "V V V V V V"
+        "Q Q P P P P"
+        "R R R R R R"
+        "S S S S S S"
+        "T T T T T T";
+    }
+    .f1 {
+        grid-area: A;
+    }
+    .intro {
+        grid-area: B;
+    }
+    .he1 {
+        grid-area: C;
+    }
+    .puppy {
+        grid-area: D;
+    }
+    .f2 {
+        grid-area: E;
+    }
+    .he2 {
+        grid-area: F;
+    }
+    .f3 {
+        grid-area: G;
+    }
+    .eerste {
+        grid-area: H;
+        padding-left: 25px;
+    }
+    .he3 {
+        grid-area: I;
+    }
+    .lisse {
+        grid-area: J;
+    }
+    .bobram {
+        grid-area: K;
+    }
+    .he4 {
+        grid-area: L;
+    }
+    .f5 {
+        grid-area: M;
+    }
+    .blaas1 {
+        grid-area: U;
+    }
+    .blaas2 {
+        grid-area: N
+    }
+    .he5 {
+        grid-area: O;
+    }
+    .vaccin1 {
+        grid-area: V;
+    }
+    .vaccin2 {
+        grid-area: P;
+    }
+    .f6 {
+        grid-area: Q;
+    }
+    .he6 {
+        grid-area: R;
+    }
+    .operatie {
+        grid-area: S;
+    }
+    .nu {
+        grid-area: T;
+    }
+    .pup {
+        width: 200px;
+    }
+    .nieuw {
+        width: 150px;
+    }
+    .bobram {
+        width: 1100px;
+    }
+    .bo {
+        width: 400px;
+    }
+    .bram {
+        width: 350px;
+    }
+    .moe {
+        width: 275px;
+    }
+    .echo {
+        width: 290px;
+    }
+    .nu {
+        width: 940px;
+    }
+    .ren,
+    .tulp,
+    .dijk {
+        width: 275px;
+    }
+}
