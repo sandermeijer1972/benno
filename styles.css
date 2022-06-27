@@ -115,7 +115,7 @@ a:hover {
     main {
         display: grid;
         grid-template-columns: repeat(6, 170px);
-        grid-template-rows: repeat(17, auto);
+        grid-template-rows: repeat(21, auto);
         grid-template-areas: 
         "A A A A A A"
         "B B B B B B"
@@ -134,7 +134,11 @@ a:hover {
         "Q Q P P P P"
         "R R R R R R"
         "S S S S S S"
-        "T T T T T T";
+        "T T T T T T"
+        "U U U U U U"
+        "V V V V V V"
+        "W W W W W W"
+        "X X X X X X";
     }
     .f1 {
         grid-area: A;
@@ -202,6 +206,18 @@ a:hover {
     }
     .nu {
         grid-area: T;
+    }
+    .he7 {
+        grid-area: U;
+    }
+    .tweejaar {
+        grid-area: V;
+    }
+    .tv {
+        grid-area: W;
+    }
+    .video {
+        grid-area: X;
     }
     .pup {
         width: 200px;
