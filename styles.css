@@ -81,6 +81,11 @@ figcaption {
     max-width: 275px;
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     border: solid 2px #4d2600;
     border-radius: 10px;
@@ -135,8 +140,8 @@ a:hover {
         "R R R R R R"
         "S S S S S S"
         "T T T T T T"
-        "U U U U U U"
-        "V V V V V V"
+        "Y Y Y Y Y Y"
+        "Z Z Z Z Z Z"
         "W W W W W W"
         "X X X X X X";
     }
@@ -208,10 +213,10 @@ a:hover {
         grid-area: T;
     }
     .he7 {
-        grid-area: U;
+        grid-area: Y;
     }
     .tweejaar {
-        grid-area: V;
+        grid-area: Z;
     }
     .tv {
         grid-area: W;
