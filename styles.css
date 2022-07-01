@@ -1,101 +1,110 @@
 body {
     background-color: #b35900;
-    color: #4d2600;
-    text-align: center;
+    margin: 0;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
-main {
-    background-color: #ff9933;
-    border: solid 5px #4d2600;
-    border-radius: 15px;
-    margin: 15px;
-    max-width: 1024px;
-}
-
-h1 {
-    font-size: 40px;
-    color: #ff9933;
-}
-
-h2 {
-    text-align: left;
-    font-size: 30px;
-    margin: 20px;
-    color: #b35900
+img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 p {
     text-align: left;
     font-size: 20px;
-    margin: 15px;
+    margin: 0;
+    margin-top: 20px;
 }
 
-img {
-    border-radius: 10px;
+h1 {
+    font-size: 35px;
+    color: #ff9933;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 30px;
+    margin: 10px;
+    font-style: italic;
+}
+
+section {
+    margin-top: 30px;    
+}
+
+figure {
+    margin: 20px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 figcaption {
     color: #4d2600;
     font-size: 15px;
     font-style: italic;
+    text-align: center;
 }
 
-.benno {
-    width: 70vw;
-    margin: 0;
-    max-width: 900px;
-}
-
-.pup,
-.moe,
-.echo {
-    width: 50vw;
-    max-width: 400px;
-}
-
-.bobram {
-    width: 75vw;
+.main__tweejaar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: 
+    "O O O"
+    "P P P"
+    "Q Q Q"
+    ". R ."
 }
 
-.bo {
-    width: 34vw;
+.main__tweejaar--header {
+    grid-area: O;
 }
 
-.bram {
-    width: 30vw;
+.main__tweejaar--text {
+    grid-area: P;
 }
 
-.nu {
-    width: 75vw;
+.main__tweejaar--tv {
+    grid-area: Q;
+}
+
+.main__tweejaar--video {
+    margin-top: 25px;
+    grid-area: R;
+}
+
+.main {
+    background-color: #ff9933;
+    border: solid 5px #4d2600;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 20px;
+    max-width: 1024px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.ren,
-.tulp,
-.dijk {
-    width: 22vw;
-    max-width: 275px;
-}
-
-.video {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
     border: solid 2px #4d2600;
     border-radius: 10px;
     background-color: #ff9933;
-    margin: 15px;
-    padding: 10px 0;
+    margin: 15px 15px 40px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 1030px;
+    gap: 20px;
+    text-align: center;
 }
 
 a {
@@ -108,149 +117,109 @@ a:hover {
     color: #4d2600;
 }
 
-@media (min-width: 1080px) {
-    body {
+
+@media(min-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+    .main__lisse--figure {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        gap: 25px;
     }
-    footer {
-        width: 1030px;
+    .main__operatie--figure {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
-    main {
+    .main__tweejaar--video {
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media(min-width: 800px) {
+    .main {
+        padding: 25px;
+    }
+    .main__puppy {
         display: grid;
-        grid-template-columns: repeat(6, 170px);
-        grid-template-rows: repeat(21, auto);
+        grid-template-columns: 1fr 230px;
+        grid-template-rows: 1fr auto;
         grid-template-areas: 
-        "A A A A A A"
-        "B B B B B B"
-        "C C C C C C"
-        "D D D D E E"
-        "F F F F F F"
-        "G H H H H H"
-        "I I I I I I"
-        "J J J J J J"
-        "K K K K K K"
-        "L L L L L L"
-        "U U U U U U"
-        "N N N N M M"
-        "O O O O O O"
-        "V V V V V V"
-        "Q Q P P P P"
-        "R R R R R R"
-        "S S S S S S"
-        "T T T T T T"
-        "Y Y Y Y Y Y"
-        "Z Z Z Z Z Z"
-        "W W W W W W"
-        "X X X X X X";
+        "A A"
+        "B C";
     }
-    .f1 {
+    .main__puppy--header {
         grid-area: A;
     }
-    .intro {
+    .main__puppy--text {
         grid-area: B;
+        margin-right: 50px;
     }
-    .he1 {
+    .main__puppy--figure {
         grid-area: C;
     }
-    .puppy {
+    .main__proef {
+        display: grid;
+        grid-template-columns: 185px 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "D D"
+        "F E"
+    }
+    .main__proef--header {
         grid-area: D;
     }
-    .f2 {
+    .main__proef--text {
         grid-area: E;
+        margin-left: 50px;
     }
-    .he2 {
+    .main__proef--figure {
         grid-area: F;
     }
-    .f3 {
+    .main__blaas {
+        display: grid;
+        grid-template-columns: 1fr 275px;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: 
+        "G G"
+        "H H"
+        "I J";
+    }
+    .main__blaas--header {
         grid-area: G;
     }
-    .eerste {
+    .main__blaas--ontsteking {
         grid-area: H;
-        padding-left: 25px;
     }
-    .he3 {
+    .main__blaas--tumor {
         grid-area: I;
+        margin-right: 50px;
     }
-    .lisse {
+    .main__blaas--figure {
         grid-area: J;
     }
-    .bobram {
+    .main__vaccin {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: 
+        "K K"
+        "L L"
+        "N M";
+    }
+    .main__vaccin--header {
         grid-area: K;
     }
-    .he4 {
+    .main__vaccin--onderzoek {
         grid-area: L;
     }
-    .f5 {
+    .main__vaccin--injectie {
         grid-area: M;
+        margin-left: 50px;
     }
-    .blaas1 {
-        grid-area: U;
-    }
-    .blaas2 {
-        grid-area: N
-    }
-    .he5 {
-        grid-area: O;
-    }
-    .vaccin1 {
-        grid-area: V;
-    }
-    .vaccin2 {
-        grid-area: P;
-    }
-    .f6 {
-        grid-area: Q;
-    }
-    .he6 {
-        grid-area: R;
-    }
-    .operatie {
-        grid-area: S;
-    }
-    .nu {
-        grid-area: T;
-    }
-    .he7 {
-        grid-area: Y;
-    }
-    .tweejaar {
-        grid-area: Z;
-    }
-    .tv {
-        grid-area: W;
-    }
-    .video {
-        grid-area: X;
-    }
-    .pup {
-        width: 200px;
-    }
-    .nieuw {
-        width: 150px;
-    }
-    .bobram {
-        width: 1100px;
-    }
-    .bo {
-        width: 400px;
-    }
-    .bram {
-        width: 350px;
-    }
-    .moe {
-        width: 275px;
-    }
-    .echo {
-        width: 290px;
-    }
-    .nu {
-        width: 940px;
-    }
-    .ren,
-    .tulp,
-    .dijk {
-        width: 275px;
+    .main__vaccin--figure {
+        grid-area: N;
     }
 }
