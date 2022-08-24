@@ -204,7 +204,7 @@ a:hover {
   }
   .main__tweejaar {
     display: grid;
-    grid-template-columns: auto 200px;
+    grid-template-columns: auto 250px;
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: "O O" "P P" "S U";
   }
