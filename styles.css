@@ -68,22 +68,19 @@ figcaption {
   flex-direction: column;
   align-items: center;
 }
-.main__tweejaar {
+.main__televisie {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 1fr auto auto auto;
-  grid-template-areas: "O O O" "P P P" "Q Q Q" ". R .";
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas: "T T T" "Q Q Q" ". R .";
 }
-.main__tweejaar--header {
-  grid-area: O;
+.main__televisie--header {
+  grid-area: T;
 }
-.main__tweejaar--text {
-  grid-area: P;
-}
-.main__tweejaar--tv {
+.main__televisie--tv {
   grid-area: Q;
 }
-.main__tweejaar--video {
+.main__televisie--video {
   grid-area: R;
   margin-top: 25px;
 }
@@ -126,7 +123,7 @@ a:hover {
     flex-direction: row;
     gap: 15px;
   }
-  .main__tweejaar--video {
+  .main__televisie--video {
     width: 500px;
     height: 281px;
   }
@@ -204,5 +201,24 @@ a:hover {
   }
   .main__vaccin--figure {
     grid-area: N;
+  }
+  .main__tweejaar {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: "O O" "P P" "S U";
+  }
+  .main__tweejaar--header {
+    grid-area: O;
+  }
+  .main__tweejaar--text {
+    grid-area: P;
+  }
+  .main__tweejaar--operatie {
+    grid-area: S;
+    margin-right: 50px;
+  }
+  .main__tweejaar--img {
+    grid-area: U;
   }
 }/*# sourceMappingURL=styles.css.map */

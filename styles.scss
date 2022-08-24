@@ -65,20 +65,16 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__tweejaar {
+    &__televisie {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
-        grid-template-rows: 1fr auto auto auto;
-        grid-template-areas: 
-        "O O O"
-        "P P P"
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas:
+        "T T T"
         "Q Q Q"
         ". R .";
         &--header {
-            grid-area: O;
-        }
-        &--text {
-            grid-area: P;
+            grid-area: T;
         }
         &--tv {
             grid-area: Q;
@@ -129,7 +125,7 @@ a:hover {
         flex-direction: row;
         gap: 15px;
     }
-    .main__tweejaar--video {
+    .main__televisie--video {
         width: 500px;
         height: 281px;
     }
@@ -217,6 +213,28 @@ a:hover {
             &--figure {
                 grid-area: N;
             }
+        }
+        &__tweejaar {
+            display: grid;
+            grid-template-columns: auto 200px;
+            grid-template-rows: 1fr auto auto auto;
+            grid-template-areas: 
+            "O O"
+            "P P"
+            "S U";
+            &--header {
+                grid-area: O;
+            }
+            &--text {
+                grid-area: P;
+            }
+            &--operatie {
+                grid-area: S;
+                margin-right: 50px;
+            }
+            &--img {
+                grid-area: U;
+            }         
         }
     }    
 }
