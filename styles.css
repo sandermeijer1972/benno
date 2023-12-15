@@ -24,10 +24,8 @@ p {
 h1 {
   font-size: 35px;
   color: #ff9933;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
+  text-decoration-line: underline;
+  text-decoration-style: double;
   text-decoration-thickness: 3px;
 }
 
@@ -36,6 +34,16 @@ h2 {
   font-size: 30px;
   margin: 10px;
   font-style: italic;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 36px;
+  margin: 0;
 }
 
 section {
@@ -83,6 +91,15 @@ figcaption {
 .main__televisie--video {
   grid-area: R;
   margin-top: 25px;
+}
+.main__einde--rouw {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  max-width: 500px;
+  gap: 20px;
 }
 
 footer {
