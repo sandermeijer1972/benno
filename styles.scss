@@ -255,5 +255,39 @@ a:hover {
                 grid-area: U;
             }         
         }
+        &__einde {
+            display: grid;
+            grid-template-columns: 250px auto;
+            grid-template-rows: 1fr auto auto auto auto auto;
+            grid-template-areas:
+            "TT TT"
+            "UU UU"
+            "VV WW"
+            "XX XX"
+            "YY YY"
+            "ZZ ZZ";
+            &--header {
+                grid-area: TT;
+            }
+            &--text {
+                grid-area: UU;
+            }
+            &--water {
+                grid-area: VV;
+            }
+            &--einde {
+                grid-area: WW;
+                margin-left: 50px;
+            }
+            &--slotsom {
+                grid-area: XX;
+            }
+            &--figure {
+                grid-area: YY;
+            }
+            &--rouw {
+                grid-area: ZZ;
+            }
+        }
     }    
 }

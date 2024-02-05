@@ -238,4 +238,32 @@ a:hover {
   .main__tweejaar--img {
     grid-area: U;
   }
+  .main__einde {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-template-areas: "TT TT" "UU UU" "VV WW" "XX XX" "YY YY" "ZZ ZZ";
+  }
+  .main__einde--header {
+    grid-area: TT;
+  }
+  .main__einde--text {
+    grid-area: UU;
+  }
+  .main__einde--water {
+    grid-area: VV;
+  }
+  .main__einde--einde {
+    grid-area: WW;
+    margin-left: 50px;
+  }
+  .main__einde--slotsom {
+    grid-area: XX;
+  }
+  .main__einde--figure {
+    grid-area: YY;
+  }
+  .main__einde--rouw {
+    grid-area: ZZ;
+  }
 }/*# sourceMappingURL=styles.css.map */
