@@ -101,6 +101,12 @@ figcaption {
   max-width: 500px;
   gap: 20px;
 }
+.main__footer--copy {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
 
 footer {
   border: solid 2px #4d2600;
